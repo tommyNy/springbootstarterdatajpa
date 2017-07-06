@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+                           http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+	   					   ">
+
+    <!--<context:annotation-config/>-->
+    <context:component-scan base-package="pl.tomihome"/>
+    <context:property-placeholder location="#{systemProperties['settings.properties']}"/>
+
+    <!--<bean id="autor" class="pl.tomihome.model.Autor">-->
+        <!--<property name="idAutora" value="1"/>-->
+        <!--<property name="imie" value="Franek"/>-->
+        <!--<property name="nazwisko" value="Kimono"/>-->
+        <!--<property name="nazwiskoRodowe" value="Kimonowicz"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="adres1" class="pl.tomihome.model.Adres">-->
+        <!--<property name="ulica" value="Marszałkowska"/>-->
+        <!--<property name="miejscowosc" value="Warszawa"/>-->
+        <!--<property name="kodPocztowy" value="00-000"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="adres2" clapl.tomihome.model.AdresImplImpldres">-->
+        <!--<property name="ulica" value="Alternatywy"/>-->
+        <!--<property name="miejscowosc" value="Warszawa"/>-->
+        <!--<property name="kodPocztowy" value="02-775"/>-->
+    <!--</bean>-->
+
+</beans>
